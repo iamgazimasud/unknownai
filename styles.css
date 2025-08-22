@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.hero {
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: 3rem;
+}
+
+.hero p {
+    font-weight: 300;
+    font-size: 1.25rem;
+    margin-top: 1rem;
+}
+
+.counter {
+    text-align: center;
+    margin: 40px 0;
+    font-size: 1.2rem;
+}
+
+footer {
+    margin-top: auto;
+    background: #f5f5f5;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9rem;
+}

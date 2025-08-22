@@ -4,8 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unknown AI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <header class="hero">
+        <h1>Unknown AI</h1>
+        <p>Discover the limitless possibilities of artificial intelligence.</p>
+    </header>
+    <section class="counter">
+        <p>Total visits: <span id="visit-count"></span></p>
+    </section>
+    <footer>
+        <p>&copy; 2024 Unknown AI</p>
+    </footer>
+    <script>
+        // Increment and display visit count using CountAPI
+        fetch('https://api.countapi.xyz/hit/unknownai/visits')
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('visit-count').innerText = data.value;
+            })
+            .catch(err => console.error('Failed to fetch visit count', err));
+    </script>
 </body>
 </html>
